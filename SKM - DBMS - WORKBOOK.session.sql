@@ -19,11 +19,20 @@ CREATE TABLE EMP (
     FOREIGN KEY(DEPTNO) REFERENCES DEPT(DEPTNO)
 );
 
-
+-- Confirm the table creation of DEPT
 SELECT column_name, data_type, character_maximum_length
 FROM information_schema.columns
 WHERE table_name = 'DEPT';
 
+-- Confirm the table creation of EMP
+
 SELECT column_name, data_type, character_maximum_length
 FROM information_schema.columns
 WHERE table_name = 'EMP';
+
+-- List name of the tables created by the user
+
+SELECT table_name
+FROM information_schema.tables
+WHERE table_schema = 'public'
+AND table_type = 'BASE TABLE'
