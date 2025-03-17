@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "SKM - DBMS - WORKBOOK",
+            "database": "DBMS-WORKBOOK",
+            "username": "postgres",
+            "password": "Sushil@2004"
+        }
+    ]
+}
