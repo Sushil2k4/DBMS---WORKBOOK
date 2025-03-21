@@ -19,6 +19,7 @@ CREATE TABLE EMP (
     FOREIGN KEY(DEPTNO) REFERENCES DEPT(DEPTNO)
 );
 
+
 -- Confirm the table creation of DEPT
 SELECT column_name, data_type, character_maximum_length
 FROM information_schema.columns
